@@ -1,0 +1,91 @@
+html,
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: fantasy;
+}
+
+body .background-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("https://gogocdn.net/cover/uzaki-chan-wa-asobitai-double-1664394785.png");
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+body .nav-bar,
+body .content,
+body .footer{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+body .nav-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+body .nav-bar .anime{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+body .nav-bar .anime .image-container{
+    width: 14%;
+    flex-grow: 1;
+    padding-right: 20px;
+    position: relative;
+}
+
+body .nav-bar .anime .image-container .anime-image{
+    width: 100%;
+    border-radius: 30px;
+}
+
+body .nav-bar .anime .image-container .last-episode{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: var(--pink-transparent);
+    padding: 10px;
+    bottom: 4px;
+    left: 0px;
+    border-radius: 5px 20px 5px 30px;
+}
+
+body .nav-bar .anime .anime-info{
+    flex-grow: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding-bottom: 10px;
+}
+
+body .nav-bar .anime .anime-info .anime-title{
+    font-size: 60px;
+}
+
+body .nav-bar .anime .anime-info .tags{
+    display: flex;
+    flex-direction: row; 
+    font-size: 20px;
+}
+
+body .nav-bar .anime .anime-info .tags .tag{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--pink);
+    color: white;
+}
