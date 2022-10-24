@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     function showSlides() {
         let i;
-        let slides = $(".anime");
+        let slides = $(".nav-bar .anime");
     
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
